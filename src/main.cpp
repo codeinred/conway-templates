@@ -28,7 +28,7 @@ int main() {
     auto const& result = get_snapshot();
     for(auto& ss : result) {
         print_ss(ss);
-        std::this_thread::sleep_for(std::chrono::seconds(1));
+        std::this_thread::sleep_for(std::chrono::milliseconds(500));
         puts("");
     }
 }
