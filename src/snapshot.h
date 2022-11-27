@@ -8,5 +8,5 @@ template <size_t T, size_t W, size_t H>
 using Snapshots = std::array<Snapshot<W, H>, T>;
 
 
-constexpr size_t NumSnapshots = 60;
+constexpr size_t NumSnapshots = 92;
 auto get_snapshot() -> Snapshots<NumSnapshots, 60, 30> const&;
