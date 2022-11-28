@@ -3,12 +3,11 @@
 This is a simple implementation of Lazily-Evaluated Conway's Game of Life,
 computed at compile time using C++ templates.
 
-This particular example will compute [New Gun 1][new-gun-1], which is a simple
-periodic gun that will emit a glider every 46 steps.
+This particular example will compute
+[New Gun 1](https://conwaylife.com/wiki/New_gun_1), which is a simple periodic
+gun that will emit a glider every 46 steps.
 
 ![Animation of New Gun 1 taken from the Conway Game of Life Wiki](images/Newgun.gif)
-
-[new-gen-1]: https://conwaylife.com/wiki/New_gun_1
 
 # Parts
 
@@ -32,10 +31,8 @@ array. This string is then queried as though it's a 2D array, in order to get
 the initial state of any cell, given an X and Y coordinate.
 
 We use `.` to represent dead cells, and `O` to represent living cells, because
-that's the representation provided [here][p46-plaintext] by the Game of Life
-wiki.
-
-[p64-plaintext]: https://conwaylife.com/patterns/p46gun.cells
+that's the representation provided
+[here][https://conwaylife.com/patterns/p46gun.cells] by the Game of Life wiki.
 
 ```cpp
 template <int W, int H, char living = 'O'>
