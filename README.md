@@ -32,7 +32,7 @@ the initial state of any cell, given an X and Y coordinate.
 
 We use `.` to represent dead cells, and `O` to represent living cells, because
 that's the representation provided
-[here][https://conwaylife.com/patterns/p46gun.cells] by the Game of Life wiki.
+[here](https://conwaylife.com/patterns/p46gun.cells) by the Game of Life wiki.
 
 ```cpp
 template <int W, int H, char living = 'O'>
